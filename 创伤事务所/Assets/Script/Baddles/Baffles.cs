@@ -25,7 +25,13 @@ public class Baffles : MonoBehaviour
     }
     void ControllBaffles()
     {//使用动画效果来实现挡板上下翻转的效果
-        if(Input.GetButtonDown("LeftBaffles")&&!doAnimator)
+        if(Input.GetButtonDown("LeftBaffles")&&!doAnimator&&bafflesType ==0)
+        {
+            isImpact = true;
+            doAnimator = true;
+            anim.SetBool("doAnimator", true);
+        }
+        else if (Input.GetButtonDown("RightBaffles") && !doAnimator && bafflesType == 1)
         {
             isImpact = true;
             doAnimator = true;
