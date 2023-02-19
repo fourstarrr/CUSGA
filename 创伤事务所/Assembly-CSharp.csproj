@@ -57,8 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Ball\BallPhysic.cs" />
-    <Compile Include="Assets\Script\Baddles\BafflesBounciness.cs" />
-    <Compile Include="Assets\Script\Baddles\Baffles.cs" />
+    <Compile Include="Assets\Script\Flipper\BafflesBounciness.cs" />
+    <Compile Include="Assets\Script\Flipper\Baffles.cs" />
+    <Compile Include="Assets\Script\Flipper\Flipper.cs" />
+    <Compile Include="Assets\Script\HP\CharacterManage.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyCharacterStatusInfo.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyStatus.cs" />
+    <Compile Include="Assets\Script\Enemy\NormalEnemyAi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -742,8 +747,14 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
