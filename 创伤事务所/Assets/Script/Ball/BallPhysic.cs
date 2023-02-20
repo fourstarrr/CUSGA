@@ -11,6 +11,7 @@ public class BallPhysic : MonoBehaviour
     [Header("¹¥»÷ÉËº¦")]
     public float damage;
     private Rigidbody rb;
+    private float realGravity;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,6 +27,7 @@ public class BallPhysic : MonoBehaviour
         Vector3 gravityDirection = new Vector3(0, 0, -1);
         rb.AddForce(gravityDirection * gravity);
     }
+   
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Enemy")

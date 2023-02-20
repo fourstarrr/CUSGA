@@ -362,9 +362,9 @@
 "Assets/Script/Enemy/EnemyCharacterStatusInfo.cs"
 "Assets/Script/Enemy/EnemyStatus.cs"
 "Assets/Script/Enemy/NormalEnemyAi.cs"
-"Assets/Script/Flipper/Baffles.cs"
-"Assets/Script/Flipper/BafflesBounciness.cs"
 "Assets/Script/Flipper/Flipper.cs"
+"Assets/Script/Flipper/废案/Baffles.cs"
+"Assets/Script/Flipper/废案/BafflesBounciness.cs"
 "Assets/Script/HP/CharacterManage.cs"
 -langversion:9.0
 

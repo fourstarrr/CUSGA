@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+/// <summary>
+/// 给怪物设定一个寻路点，怪物会一直朝寻路点前进
+/// 
+/// </summary>
 public class NormalEnemyAi : MonoBehaviour
 {
 

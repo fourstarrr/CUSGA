@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638121710840040495
-    m_Hash: 1931378231
+      ticks: 638124094463134528
+    m_Hash: 793860175
   m_LockFileStatus:
     m_FilePath: "C:/Users/491/Desktop/Game/CUSGA/\u521B\u4F24\u4E8B\u52A1\u6240/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638121710840070526
-    m_Hash: 3627499608
+      ticks: 638124094463134528
+    m_Hash: 3669590305
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -874,6 +874,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1

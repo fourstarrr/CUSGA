@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 
+/// 用于控制挡板
+/// </summary>
 public class Flipper : MonoBehaviour
 {
     [Header("翻转挡板的加速度")]
@@ -13,10 +16,13 @@ public class Flipper : MonoBehaviour
     [Header("挡板类型")]
     [Tooltip("为1则是左挡板，为2则是右挡板")]
     [Range(1f, 2f)] public int flipperType;
+    [Header("额外打击力度")]
+    public float addforce;
 
     private HingeJoint hinge; // Flipper的摆臂
     private Rigidbody rb; // Flipper的底座
     private bool isFlipping = false; // Flipper是否正在翻转   
+    public bool isUp = false;//是否上翻
     private JointMotor motor;
     private float angle;
     void Start()
@@ -38,12 +44,14 @@ public class Flipper : MonoBehaviour
         {
 
             isFlipping = true;
+            isUp = true;
             StartCoroutine(Flip1());
         }
         if (Input.GetKeyDown(KeyCode.D) && !isFlipping && flipperType == 2)
         {
 
             isFlipping = true;
+            isUp = true;
             StartCoroutine(Flip2());
         }
     }
@@ -76,6 +84,7 @@ public class Flipper : MonoBehaviour
         }
         while (angle >= maxAngle)
         {
+            isUp = false;
             hinge.useMotor = true;
             motor.force = flipperForce;
             motor.targetVelocity = flipperSpeed;
@@ -98,12 +107,27 @@ public class Flipper : MonoBehaviour
         }
         while (angle >= maxAngle)
         {
+            isUp = false;
             hinge.useMotor = true;
             motor.force = flipperForce;
             motor.targetVelocity = -flipperSpeed;
             hinge.motor = motor;
             angle = Mathf.Abs(hinge.angle);
             yield return null;
+        }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        ContactPoint[] contactPoints = collision.contacts;
+        if (collision.gameObject.CompareTag("Ball") &&isUp)
+        {
+           
+            foreach (ContactPoint contactPoint in contactPoints)
+            {
+                Vector3 normal = contactPoint.normal;
+                Vector3 force = -normal * addforce;
+                collision.gameObject.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+            }
         }
     }
 }
