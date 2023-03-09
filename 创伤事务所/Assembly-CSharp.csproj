@@ -659,6 +659,11 @@
     <Compile Include="Assets\不用管\Behavior Designer\Runtime\Tasks\Unity\Transform\LookAt.cs" />
     <Compile Include="Assets\不用管\Behavior Designer\Runtime\Tasks\Unity\Vector2\ClampMagnitude.cs" />
     <Compile Include="Assets\不用管\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\IsStopped.cs" />
+    <Compile Include="Assets\Script\Enemy\小型心魔.cs" />
+    <Compile Include="Assets\Script\Enemy\盾兵.cs" />
+    <Compile Include="Assets\Script\Enemy\心灵狙击手.cs" />
+    <Compile Include="Assets\Script\Enemy\普通心魔.cs" />
+    <Compile Include="Assets\Script\Enemy\心灵狙击手的子弹.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\不用管\Behavior Designer\Runtime\BehaviorDesigner.Runtime.dll" />

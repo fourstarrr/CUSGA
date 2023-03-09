@@ -15,7 +15,7 @@ namespace Character
         [SerializeField] public float enemyCurrentDamage;
         [SerializeField] public float enemyCurrentProperties;
 
-        void Start()
+        void Awake()
         {   //游戏开始数据初始化
             enemyCurrentHealth = CharactersInfo.MaxHealth;
             enemyCurrentDamage = CharactersInfo.AttackDamge;
