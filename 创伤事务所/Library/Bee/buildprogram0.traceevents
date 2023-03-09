@@ -2,6 +2,7 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
 <<<<<<< HEAD
+<<<<<<< HEAD
 { "pid": 35942, "tid": 1, "ts": 1678393666807378, "dur": 355481, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678393666808202, "dur": 60635, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678393667116155, "dur": 2498, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -10,6 +11,8 @@
 { "pid": 35942, "tid": 1, "ts": 1678393667166864, "dur": 942, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678393667166210, "dur": 1614, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 =======
+=======
+>>>>>>> Xingo
 { "pid": 35942, "tid": 1, "ts": 1678392354520253, "dur": 381180, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678392354521121, "dur": 57701, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678392354849402, "dur": 6585, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -17,4 +20,7 @@
 { "pid": 35942, "tid": 1, "ts": 1678392354856511, "dur": 32277, "ph": "X", "name": "JsonToString", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678392354905307, "dur": 947, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1678392354904639, "dur": 1633, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< HEAD
+>>>>>>> Xingo
+=======
 >>>>>>> Xingo
