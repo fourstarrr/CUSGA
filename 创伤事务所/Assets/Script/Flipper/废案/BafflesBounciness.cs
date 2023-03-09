@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BafflesBounciness : MonoBehaviour
+public class BafflesBounciness1 : MonoBehaviour
 {
     [Header("击球力度")]
     [Tooltip("当然是击球力度越大球飞出去的速度越快辣")]
