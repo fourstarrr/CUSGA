@@ -342,8 +342,6 @@
 -r:"C:/Users/491/Desktop/Game/CUSGA/创伤事务所/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"C:/Users/491/Desktop/Game/CUSGA/创伤事务所/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"C:/Users/491/Desktop/Game/CUSGA/创伤事务所/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Library/PackageCache/com.unity.timeline@1.7.1/Runtime/Activation/ActivationMixerPlayable.cs"
 "Library/PackageCache/com.unity.timeline@1.7.1/Runtime/Activation/ActivationPlayableAsset.cs"
 "Library/PackageCache/com.unity.timeline@1.7.1/Runtime/Activation/ActivationTrack.cs"
